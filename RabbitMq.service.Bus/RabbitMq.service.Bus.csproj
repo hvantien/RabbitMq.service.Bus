@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Abstractions\" />
+    <None Remove="CommandBus\" />
+    <None Remove="Events\" />
+    <None Remove="RabbitMQ\" />
+    <None Remove="RabbitMQ.Client" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Autofac" />
+    <None Remove="Polly" />
+    <None Remove="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="CommandBus\" />
+    <Folder Include="Events\" />
+    <Folder Include="RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
+  </ItemGroup>
+</Project>
