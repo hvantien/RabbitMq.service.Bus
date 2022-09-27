@@ -1,5 +1,4 @@
-﻿using RabbitMq.Service.Bus.Abstractions;
-using RabbitMq.Service.Bus.CommandBus;
+﻿using RabbitMq.Service.Bus.CommandBus;
 using RabbitMq.Service.Bus.Events.Core;
 using Autofac;
 using Microsoft.Extensions.Logging;
